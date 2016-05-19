@@ -1,0 +1,201 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[margin=1in]{geometry}
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true
+}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\newenvironment{titlemize}[1]{%
+  \paragraph{#1}
+  \begin{itemize}}
+  {\end{itemize}}
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Bojan Mi\v{s}i\'{c}}  & +381692215553\\
+Ratka Mitrovi\'{c}a 96 &  bojan.misic@outlook.com \\
+Belgrade, 11135 Serbia & www.linkedin.com/in/bojanmisic\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{MDxperience}{Austin, TX (remote)}{Software Developer}{July 2014 - May 2016}
+	\vspace{2mm}
+	\begin{itemize}
+		\resitem{Worked in a team in charge of maintenance and development of MDx - Medical Practice Management System software back-end. Inheriting a large legacy code base of a SaaS application model written in C/Linux environment, we've managed to refactor and optimize the code, introduce new features and bring around 50 customers from different systems.}
+		\vspace{1mm}
+		\resitem{Other than working on general application usability, I've been involved in different aspects of the system: statements processing, bidirectional communication with insurance companies and real-time communication with other practice management systems.}
+		\vspace{1mm}
+		\resitem{Implemented utilities to move customers from other software to our product and developed a number of customer data reports.}
+		\vspace{1mm}
+		\resitem{Technologies used: \textit{C, Python, PHP, PostgreSQL, Linux, Git.}}
+		\vspace{1mm}
+	\end{itemize}
+\item
+	\ressubheading{Anywhere, s.r.o.}{Prague, CZ}{Windows Mobile Developer}{May 2014 - Dec. 2014}
+	\vspace{2mm}
+	\begin{itemize}
+		\resitem{Worked on end-to-end implementation and publishing of different Windows applications for phones and tablets.}
+		\vspace{1mm}
+		\resitem{Fully developed official Windows Phone 8.1 application for McDonalds Czech Republic (Muj McDonald's) and a Universal Windows Application for Tipsport Extraliga, Czech national hockey league.}
+		\vspace{1mm}
+		\resitem{Maintained and further developed official Tesco Windows Phone and Windows 8.1 applications which are used in Czech Republic, Slovakia, Poland and Malaysia.}
+		\vspace{1mm}
+		\resitem{Technologies used: \textit{C\#, .NET.}}
+		\vspace{1mm}
+\end{itemize}
+\item
+	\ressubheading{Microsoft Serbia}{Belgrade, RS}{Microsoft Student Partner}{Apr. 2011 - Dec. 2014}
+	\vspace{2mm}
+	\begin{itemize}
+		\resitem{Coordinated and actively participated in Microsoft Student Tech Club (group of 25 students on average) at School of Electrical Engineering.}
+		\vspace{1mm}
+		\resitem{Organized meetings and lectured about the following topics: Introduction to Object Oriented Programming using C\#, XNA Game Studio Framework and Windows Phone 7 application development.}
+		\vspace{1mm}
+		\resitem{Actively participated in the following events: ImagineCamp (Windows/Windows Phone 8.1 two-day lab-driven course, lecturer/demonstrator), Sinergija@University academic tour (Microsoft Student Tech Club introduction), Windows Azure \& Windows Phone 7 Student Bootcamp (demonstrated possibilities of Microsoft SQL Azure).}
+		\vspace{1mm}
+		\resitem{Organized and promoted the following events: Bubble Cup 2011 Finals, local Imagine Cup 2011 Finals, Microsoft Cloud Power tour.}
+		\vspace{1mm}
+		\resitem{Blogged and published news on msacademic.rs regarding new Microsoft technologies and various events.}
+		\vspace{1mm}
+	\end{itemize}
+
+\item
+	\ressubheading{Microsoft Development Center Serbia}{Belgrade, RS}{Data Collection and Labeling Associate}{Aug. 2012 - Mar. 2013}
+	\vspace{2mm}
+	\begin{itemize}
+		\resitem{ Collection and labeling of data samples intended for testing the OCR engines and data analysis.}
+		\vspace{1mm}
+	\end{itemize}
+\end{itemize}
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{University of Belgrade, School of Electrical Engineering}{Belgrade, RS}{M.Sc. Student, Computer Engineering and Informatics}{2015 - Present}
+\item
+	\ressubheading{University of Belgrade, School of Electrical Engineering}{Belgrade, RS}{B.Sc., Computer Engineering and Informatics}{2007 - 2013}
+
+\end{itemize}
+
+\resheading{Projects}
+	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		Tarabica Conference Windows Phone application (\href{https://www.microsoft.com/en-us/store/apps/tarabica/9nblggh0f91q}{\underline{store}}, \href{https://github.com/bojan-misic/tarabica-wp75}{\underline{source}}) (collaboration) \\ 
+	\vspace{1mm}	
+		\hskip 101pt Windows 8.1 \hskip 16pt application (\href{https://www.microsoft.com/en-us/store/apps/tarabica-it-conference/9wzdncrdnb6h}{\underline{store}}, \href{https://github.com/bojan-misic/conference-universal-app}{\underline{source}}) (collaboration) & 2014\\
+		\vspace{1mm}
+		Ispovesti Windows Phone application (\href{https://www.microsoft.com/en-us/store/apps/ispovesti/9nblggh08mgg}{\underline{store}}) & 2014\\
+		\vspace{1mm}
+		SAM Godi\v{s}nja nagrada 2013 Windows 8.1 application & 2013\\
+		\vspace{1mm}
+		Sinergija 13 Windows Phone application (\href{https://www.microsoft.com/en-us/store/apps/sinergija-13/9nblggh0f921}{\underline{store}}) (collaboration) & 2013\\
+		\vspace{1mm}
+		Minimalistic OS kernel that supports multiple threads with timesharing in C++ & (school project)\\
+		\vspace{1mm}
+		Minimalistic file system with linked allocation and parallel access support in C++ & (school project)\\
+		\vspace{1mm}
+		Primitive ELF loader and linker for Linux systems in C & (school project)\\
+		\vspace{1mm}
+		Compiler for MicroJava programming language for school purposes in Java & (school project)\\
+\end{tabular*}
+
+\resheading{Publications}
+	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		Signal strength visualization in mobile networks (TELFOR, \href{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6716394&newsearch=true&queryText=bojan\%20misic}{\underline{link}}) & 2013\\
+		 \\
+		Publication describes an implementation of the Android-based cell signal strength\\ 
+		measuring system with a goal to present collected data in a visually appealing way.\\
+\end{tabular*}
+
+\resheading{Courses and Certificates}
+	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+	\vspace{1mm}
+		Machine Learning (Coursera MOOC, Stanford) - (\href{https://www.coursera.org/account/accomplishments/certificate/96UGJ5GACLAU}{\underline{verification}}) & 2016\\
+\vspace{1mm}
+		Artificial Intelligence (EDx MOOC, Berkley) - (\href{https://s3.amazonaws.com/verify.edx.org/downloads/c51a43f51a74415796e428c0e23c8dd9/Certificate.pdf}{\underline{verification}}) & 2013\\
+		\vspace{1mm}
+		Microsoft Technology Associate - Mobile Development Fundamentals - License\# E416-7190 & 2013\\
+		\vspace{1mm}
+		Microsoft Technology Associate - Software Development Fundamentals - License\# E416-2394 & 2013\\
+		\vspace{1mm}
+		.NET Framework and Functional Programming: F\# language - Microsoft IT Academy & 2011\\
+		\vspace{1mm}
+		Linux L101 (Linux fundamentals) - School of Electrical Engineering Educational Center & 2008\\
+
+\end{tabular*}
+\newpage
+\resheading{Skills}
+
+\begin{description}
+\item[Programming Languages/Technologies:]
+C\#, C/C++, Python, PHP, Java, F\#, SQL, PostgreSQL, Windows Azure, Git, Visual Studio, Vim
+\item[Operating Systems:]
+Windows, Linux, Mac OS
+\item[Languages:]
+English (Advanced), Serbian (Native)
+\item[Miscellaneous:]\mbox{}\\[-1.5\baselineskip]
+\begin{itemize}
+\renewcommand\labelitemi{--}
+\item{Hardworking with a constant desire to learn and develop}
+\resitem{Sharing and communicating well and writing to groups}
+\resitem{Teaching or explaining in detail to groups}
+\resitem{Producing, creating, formulating or devising original ideas or concepts}
+\resitem{Innovative and creative problem solving}
+\resitem{Commitment to accuracy, quality and attention to details}
+\end{itemize}
+\end{description}
+\iffalse
+\resheading{Interests}
+
+\begin{description}
+\item[Hobbies:] Aviation, Modern technologies
+\item[Sports:] Biking, Running
+\item[Computer:] Microsoft technologies, Windows Phone, Xamarin
+\item[Membership:] Association for Computer Machinery (ACM)
+\end{description}
+\fi
+\end{document}
